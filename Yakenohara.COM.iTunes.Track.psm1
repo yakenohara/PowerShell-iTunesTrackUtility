@@ -3,11 +3,10 @@
 # </CAUTION!>
 
 # Private
-Get-ChildItem $PSScriptRoot\Private\*.ps1 -Recurse |
-    ForEach-Object { . $_ }
+# Get-ChildItem $PSScriptRoot\Private\*.ps1 -Recurse |
+#     ForEach-Object { . $_.FullName }
 
 # Public
 Get-ChildItem $PSScriptRoot\Public\*.ps1 -Recurse |
-    ForEach-Object { . $_ }
+    ForEach-Object { . $_.FullName }
 
-Export-ModuleMember -Function (Get-ChildItem $PSScriptRoot\Public\*.ps1).BaseName

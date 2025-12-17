@@ -13,7 +13,7 @@
 @{
 
 # このマニフェストに関連付けられているスクリプト モジュール ファイルまたはバイナリ モジュール ファイル。
-# RootModule = ''
+RootModule = 'Yakenohara.COM.iTunes.Track.psm1'
 
 # このモジュールのバージョン番号です。
 ModuleVersion = '1.0'
